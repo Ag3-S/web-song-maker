@@ -3,21 +3,23 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Song Maker (JS)</title>
+    <title >Song Maker (JS)</title>
+    <link rel="stylesheet" href="./styles.css"/>
   </head>
   <body>
-    <main>
+    <main id="app">
       <!-- Header -->
-      <header>
+      <header class="app-header">
         <h1>Song Maker (JS)</h1>
       </header>
       <!--Section 1-->
-      <section>
-        <button>Play</button>
+      <section id="cont">
+        <button class="btn">Play</button>
         <span>|</span>
         <label for="tempo">Tempo</label>
         <input
           id="tempo"
+          class="tempo-input"
           name="tempo"
           aria-label="Tempo (bpm)"
           type="number"
@@ -29,21 +31,30 @@
         <span>|</span>
 
         <label for="waveSelect">Sound</label>
-        <select name="waveSelect" id="waveSelect">
+        <select name="waveSelect" id="waveSelect" class="wave-select">
           <option value="sine">Sine</option>
           <option value="square">Square</option>
           <option value="triangle">Triangle</option>
           <option value="sawtooth">Sawtooth</option>
         </select>
         <span>|</span>
-        <button id="clearBtn">Clear</button>
-        <button id="randomise">Randomise</button>
-      </section id="grid" role="grid" aria-label="Notes grid">
+        <button id="clearBtn" class="btn">Clear</button>
+        <button id="randomise" class="btn">Randomise</button>
+      </section>
 
       <!--Section 2-->
+      <div>
+        <h1 class="notes-grid"> Notes Grid below</h1>
+      </div>
 
-      <section></section>
+
+      <section id="grid" role="grid" aria-label="Notes grid"> 
+
+      </section>
+
     </main>
+    <noscript>Please enable Javascript to use this Song Maker Project.</noscript>
+
   </body>
 </html>
 <!-- Hi-->

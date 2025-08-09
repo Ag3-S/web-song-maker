@@ -1,0 +1,105 @@
+/* html {
+  max-width: 70ch;
+  padding: 64px 16px;
+  margin: auto;
+  font-size: 12px;
+  font-family: sans-serif;
+}
+
+h1 {
+  border: 2px solid salmon;
+  padding: 4px;
+  font-family: monospace;
+}
+
+.notes-grid {
+  b
+  der: 0px;
+  font-family: monospace;
+  padding: 0px;
+  background-color: aquamarine;
+} */
+:root{
+  --bg: #eee0ef;
+  --text: #30498d;
+  --line: #826c48;
+  --cell: #675a40;
+  --cell-active: #91c6ec;
+  --text: #3e5290;
+  --muted: #5f858c;
+  --accent: #5e9ead;
+
+
+
+}
+* {
+  box-sizing: borderbox;
+  margin: 0;
+  padding: 0;
+}
+
+
+html, body {
+  height:100%;
+}
+
+body{
+  background-color: var(--bg);
+  color: var(--text)
+}
+
+
+/*Header*/
+
+.app-header{
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  margin-bottom: 12px;
+}
+
+.title{
+  font-size: 20px;
+  margin: 0;
+}
+
+#app{
+  max-width:960px;
+  margin: 0 auto;
+  padding: 12px
+}
+
+#controls{
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap:10px;
+  margin:10px 0 10px 0;
+
+}
+
+.btn, .wave-select, .tempo-input{
+  border: 1px solid var(--line);
+  border-radius: 6px;
+  background-color: var(--panel);
+  padding: 8px 10px;
+  color: var(--text);
+}
+
+.btn{
+  cursor: pointer;
+}
+
+.btn:not(:disabled):hover{
+  background-color: var(--cell-active);
+}
+
+.btn:disabled{
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.divider{
+  opacity: 0.60;
+  color: var(--muted);
+}
