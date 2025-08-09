@@ -1,11 +1,49 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Song Maker (JS)</title>
-</head>
-<body>
-    <h1>Hello GHW!</h1>
-</body>
+  </head>
+  <body>
+    <main>
+      <!-- Header -->
+      <header>
+        <h1>Song Maker (JS)</h1>
+      </header>
+      <!--Section 1-->
+      <section>
+        <button>Play</button>
+        <span>|</span>
+        <label for="tempo">Tempo</label>
+        <input
+          id="tempo"
+          name="tempo"
+          aria-label="Tempo (bpm)"
+          type="number"
+          min="40"
+          max="120"
+          value="60"
+        />
+
+        <span>|</span>
+
+        <label for="waveSelect">Sound</label>
+        <select name="waveSelect" id="waveSelect">
+          <option value="sine">Sine</option>
+          <option value="square">Square</option>
+          <option value="triangle">Triangle</option>
+          <option value="sawtooth">Sawtooth</option>
+        </select>
+        <span>|</span>
+        <button id="clearBtn">Clear</button>
+        <button id="randomise">Randomise</button>
+      </section id="grid" role="grid" aria-label="Notes grid">
+
+      <!--Section 2-->
+
+      <section></section>
+    </main>
+  </body>
 </html>
+<!-- Hi-->
