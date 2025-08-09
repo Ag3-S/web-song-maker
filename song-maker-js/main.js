@@ -1,4 +1,9 @@
+console.log("Start loading js");
+
 const grid = document.getElementById("grid");
-const layout = document.createElement("h1");
-layout.textContent = "Hello GHW";
-grid.appendChild(layout);
+const myTempH1 = document.createElement("h1");
+
+console.log("Created my temp H1 loading js");
+myTempH1.textContent = "bye bye";
+grid.appendChild(myTempH1);
+console.log("Finish loading js");
