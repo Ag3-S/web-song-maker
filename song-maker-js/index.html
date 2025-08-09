@@ -13,8 +13,8 @@
         <h1>Song Maker (JS)</h1>
       </header>
       <!--Section 1-->
-      <section id="cont">
-        <button class="btn">Play</button>
+      <section id="controls" aria-label="Controls">
+        <button id= "Play" class="btn">Play</button>
         <span>|</span>
         <label for="tempo">Tempo</label>
         <input
@@ -28,7 +28,7 @@
           value="60"
         />
 
-        <span>|</span>
+        <span class="divider">|</span>
 
         <label for="waveSelect">Sound</label>
         <select name="waveSelect" id="waveSelect" class="wave-select">
@@ -54,7 +54,7 @@
 
     </main>
     <noscript>Please enable Javascript to use this Song Maker Project.</noscript>
-
+    <script src="./main.js"></script>
   </body>
 </html>
 <!-- Hi-->

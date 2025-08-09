@@ -19,19 +19,17 @@ h1 {
   padding: 0px;
   background-color: aquamarine;
 } */
-:root{
-  --bg: #eee0ef;
-  --text: #30498d;
-  --line: #826c48;
-  --cell: #675a40;
-  --cell-active: #91c6ec;
-  --text: #3e5290;
-  --muted: #5f858c;
-  --accent: #5e9ead;
-
-
-
+:root {
+  --bg: #0f172a;
+  --panel: #111827;
+  --line: #243244;
+  --cell: #0e1a2b;
+  --cell-active: #18334f;
+  --text: #e5e7eb;
+  --muted: #9aa7b8;
+  --accent: #22d3ee;
 }
+
 * {
   box-sizing: borderbox;
   margin: 0;
